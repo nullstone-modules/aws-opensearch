@@ -16,7 +16,7 @@ variable "dedicated_master_count" {
 
 variable "dedicated_master_type" {
   type = string
-  default = "r6g.large.search"
+  default = "r6gd.large.elasticsearch"
   description = "Instance type used for the dedicated master nodes."
 }
 
@@ -31,6 +31,6 @@ EOF
 
 variable "instance_type" {
   type = string
-  default = "r6g.large.search"
+  default = "r6gd.large.elasticsearch"
   description = "Instance type used for the instance nodes."
 }
