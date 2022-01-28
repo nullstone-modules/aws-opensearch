@@ -14,7 +14,7 @@ output "db_hostname" {
 }
 
 output "db_port" {
-  value       = local.port
+  value       = 443
   description = "number ||| The port used to connect to the OpenSearch domain"
 }
 
