@@ -42,5 +42,7 @@ resource "aws_elasticsearch_domain" "this" {
     subnet_ids         = slice(local.private_subnet_ids, 0, var.instance_count)
   }
 
+  access_policies = data.aws_iam_policy_document.this.json
+
   depends_on = [aws_iam_service_linked_role.this]
 }
