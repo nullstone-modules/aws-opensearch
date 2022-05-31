@@ -1,0 +1,11 @@
+org_name: nullstone
+name: aws-opensearch
+friendly_name: OpenSearch
+description: Creates an OpenSearch domain in AWS (successor to Elasticsearch)
+category: datastore
+type: opensearch/aws
+appCategories: []
+layer: database
+is_public: true
+provider_types:
+    - aws
