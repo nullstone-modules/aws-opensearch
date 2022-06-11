@@ -3,9 +3,11 @@ name: aws-opensearch
 friendly_name: OpenSearch
 description: Creates an OpenSearch domain in AWS (successor to Elasticsearch)
 category: datastore
-type: opensearch/aws
-appCategories: []
-layer: database
-is_public: true
+subcategory: ""
 provider_types:
     - aws
+platform: elasticsearch
+subplatform: opensearch
+type: opensearch/aws
+appCategories: []
+is_public: true
