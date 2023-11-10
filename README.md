@@ -1,14 +1,15 @@
-# aws-s3-bucket
+# OpenSearch Domain
 
-AWS S3 bucket datastore
+This module is used to create and manage an AWS OpenSearch Domain (successor to Elasticsearch).
 
-## Inputs
+## Security & Compliance
 
-- `versioning` - Enable versioning of objects in the S3 store.
-- `server_side_encryption` - Enable encryption of objects as they are written in the S3 store. Access the objects the same way, decryption occurs automatically. 
+Security scanning is graciously provided by Bridgecrew. Bridgecrew is the leading fully hosted, cloud-native solution providing continuous Terraform security and compliance.
 
-## Outputs
-
-- `region` - The region of the created S3 bucket.
-- `bucket_arn` - The ARN of the created S3 bucket.
-- `bucket_name` - The name of the created S3 bucket.
+![Infrastructure Security](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-opensearch/general)
+![CIS AWS V1.3](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-opensearch/cis_aws_13)
+![PCI-DSS V3.2](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-opensearch/pci)
+![NIST-800-53](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-opensearch/nist)
+![ISO27001](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-opensearch/iso)
+![SOC2](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-opensearch/soc2)
+![HIPAA](https://www.bridgecrew.cloud/badges/github/nullstone-modules/aws-opensearch/hipaa)
