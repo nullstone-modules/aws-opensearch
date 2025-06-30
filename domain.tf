@@ -5,10 +5,6 @@ locals {
   zone_count = min(var.instance_count, length(local.private_subnet_ids), 3)
 }
 
-resource "aws_iam_service_linked_role" "this" {
-  aws_service_name = "es.amazonaws.com"
-}
-
 resource "aws_elasticsearch_domain" "this" {
   domain_name           = local.resource_name
   tags                  = local.tags
@@ -43,6 +39,4 @@ resource "aws_elasticsearch_domain" "this" {
   }
 
   access_policies = data.aws_iam_policy_document.this.json
-
-  depends_on = [aws_iam_service_linked_role.this]
 }
