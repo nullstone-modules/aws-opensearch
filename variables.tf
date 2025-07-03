@@ -1,6 +1,6 @@
 variable "opensearch_version" {
   type        = string
-  default     = "1.1"
+  default     = "2.19"
   description = "Specify the version of OpenSearch to be used for this domain."
 }
 
